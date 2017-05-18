@@ -14,4 +14,5 @@ def hello_world():
     return "????"
 
 if __name__ == "__main__":
-    app.run()
+    por = int(os.environ.get('PORT', 33507))
+    app.run(debug=True, port=por)
